@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #e5e4e1;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 40rem;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: #1b2428;
+  align-items: center;
+}
+
+.theme {
+  display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  align-items: center;
+}
+
+.Theme-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.Theme-select--heading {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 1.7rem;
+       column-gap: 1.7rem;
+}
+
+.theme-button {
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  padding: 0.5rem 0.5rem;
+  background-color: #a69d91;
+}
+
+.calc-input {
+  height: 10rem;
+  background-color: white;
+  border: none;
+  text-align: right;
+  font-size: 3rem;
+  color: black;
+}
+
+.calc-input:active {
+  outline: none;
+  border: none;
+}
+
+.theme-selector {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+}
+
+.theme-selector.active {
+  background-color: #d03f2f;
+}
+
+.Form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  position: relative;
+}
+
+.Form button {
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  color: #182034;
+}
+
+.calc-buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.calc-button {
+  height: 4rem;
+}
+
+.Reset {
+  grid-column: 1/3;
+  background-color: #377f86;
+  border: none;
+  color: white;
+}
+
+.del {
+  background-color: #377f86;
+  border: none;
+  color: white;
+}
+
+.equals {
+  grid-column: 3/5;
+  background-color: #ca5502;
+  border: none;
+  color: white;
+}
+
+.prev {
+  top: 1rem;
+  right: 1rem;
+  color: #182034;
+  z-index: 2;
+  font-size: 1.5rem;
+  position: absolute;
+}/*# sourceMappingURL=link2.css.map */
